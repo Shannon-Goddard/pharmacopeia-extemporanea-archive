@@ -1,6 +1,6 @@
 # 🧪 The Pharmacopeia Extemporanea — Digital Archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576814.svg)](https://doi.org/10.5281/zenodo.20576814)
+[![DOI](https://img.shields.io/badge/DOI-zenodo.20576814-gold.svg)](https://doi.org/10.5281/zenodo.20576814)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-blue)](https://shannon-goddard.github.io/pharmacopeia-extemporanea-archive)
 [![Recipes](https://img.shields.io/badge/Recipes-977-green)](data/recipes.csv)

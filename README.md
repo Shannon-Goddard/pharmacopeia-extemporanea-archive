@@ -1,5 +1,11 @@
 # 🧪 The Pharmacopeia Extemporanea — Digital Archive
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576814.svg)](https://doi.org/10.5281/zenodo.20576814)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-blue)](https://shannon-goddard.github.io/pharmacopeia-extemporanea-archive)
+[![Recipes](https://img.shields.io/badge/Recipes-977-green)](data/recipes.csv)
+[![Ingredients](https://img.shields.io/badge/Ingredients-3%2C022-orange)](data/ingredients.csv)
+
 **The world's most comprehensive structured dataset of 18th-century medicinal recipes.**
 
 977 recipes. 3,022 ingredients. Three original sources spanning 1710–1785. Every measurement converted to metric. Fully searchable. Open data.
@@ -24,7 +30,7 @@ The original texts were painstakingly digitized by **Stephen Hart** at [pascalbo
 
 ## Live Site
 
-👉 **[View the searchable database](#)** *(GitHub Pages link here)*
+👉 **[View the searchable database](https://shannon-goddard.github.io/pharmacopeia-extemporanea-archive)**
 
 Filter by ailment, ingredient, category, or source author. Checkbox multi-select with instant results.
 
@@ -186,10 +192,10 @@ If you use this data in academic work, please cite:
 The Pharmacopeia Extemporanea Digital Archive (2026).
 Original texts digitized by Stephen Hart (pascalbonenfant.com).
 Structured dataset and tooling by Amazon Q & Shannon Goddard | Loyal9 LLC
-Available at: [repository URL]
+DOI: 10.5281/zenodo.20576814
 ```
 
-If a DOI is assigned, use that instead.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576814.svg)](https://doi.org/10.5281/zenodo.20576814)
 
 ### Known limitations
 

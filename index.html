@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacopeia Extemporanea</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>The Pharmacopeia Extemporanea</h1>
+        <p class="subtitle">18th Century Medical Recipes — Searchable Database</p>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="filter-group">
+                <label for="ailment-search">Filter by Ailment</label>
+                <div class="dropdown-filter" id="ailment-filter">
+                    <input type="text" id="ailment-search" placeholder="Search ailments..." autocomplete="off">
+                    <div class="dropdown-list" id="ailment-list"></div>
+                </div>
+                <div class="selected-tags" id="ailment-tags"></div>
+            </div>
+
+            <div class="filter-group">
+                <label for="ingredient-search">Filter by Ingredient</label>
+                <div class="dropdown-filter" id="ingredient-filter">
+                    <input type="text" id="ingredient-search" placeholder="Search ingredients..." autocomplete="off">
+                    <div class="dropdown-list" id="ingredient-list"></div>
+                </div>
+                <div class="selected-tags" id="ingredient-tags"></div>
+            </div>
+
+            <div class="filter-group">
+                <label for="category-search">Filter by Category</label>
+                <div class="dropdown-filter" id="category-filter">
+                    <input type="text" id="category-search" placeholder="Search categories..." autocomplete="off">
+                    <div class="dropdown-list" id="category-list"></div>
+                </div>
+                <div class="selected-tags" id="category-tags"></div>
+            </div>
+
+            <div class="filter-group">
+                <label for="source-search">Filter by Source</label>
+                <div class="dropdown-filter" id="source-filter">
+                    <input type="text" id="source-search" placeholder="Search sources..." autocomplete="off">
+                    <div class="dropdown-list" id="source-list"></div>
+                </div>
+                <div class="selected-tags" id="source-tags"></div>
+            </div>
+
+            <button id="clear-filters">Clear All Filters</button>
+        </section>
+
+        <section class="results">
+            <p id="result-count"></p>
+            <div id="recipe-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data sourced from <a href="https://www.pascalbonenfant.com/18c/medicine/pharmacopeia.html">pascalbonenfant.com</a> | Open Source on <a href="#">GitHub</a></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

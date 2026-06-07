@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #faf8f0;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #8b6914;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #5c3d0e;
+}
+
+.subtitle {
+    color: #7a6a4f;
+    font-style: italic;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f0ead6;
+    border-radius: 8px;
+    border: 1px solid #d4c9a8;
+    align-items: flex-start;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 220px;
+    position: relative;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    color: #5c3d0e;
+    font-size: 0.9rem;
+}
+
+.dropdown-filter {
+    position: relative;
+}
+
+.dropdown-filter input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #b8a88a;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background: #fff;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #b8a88a;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-list.open {
+    display: block;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.dropdown-item:hover {
+    background: #f0ead6;
+}
+
+.dropdown-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdown-item label {
+    cursor: pointer;
+    flex: 1;
+}
+
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    background: #8b6914;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.tag button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin-left: 0.4rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+#clear-filters {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    background: #5c3d0e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+#clear-filters:hover {
+    background: #8b6914;
+}
+
+/* Results */
+.results {
+    margin-top: 1rem;
+}
+
+#result-count {
+    font-style: italic;
+    color: #7a6a4f;
+    margin-bottom: 1rem;
+}
+
+.recipe-card {
+    background: #fff;
+    border: 1px solid #d4c9a8;
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.recipe-card h3 {
+    color: #5c3d0e;
+    margin-bottom: 0.3rem;
+}
+
+.recipe-card .category {
+    font-size: 0.8rem;
+    color: #8b6914;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.recipe-card .ailments {
+    margin-top: 0.4rem;
+}
+
+.recipe-card .ailment-badge {
+    display: inline-block;
+    background: #e8dfc7;
+    color: #5c3d0e;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.recipe-card .ingredients-list {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #eee;
+}
+
+.recipe-card .ingredients-list h4 {
+    font-size: 0.85rem;
+    color: #7a6a4f;
+    margin-bottom: 0.4rem;
+}
+
+.recipe-card .ingredients-list table {
+    width: 100%;
+    font-size: 0.82rem;
+    border-collapse: collapse;
+}
+
+.recipe-card .ingredients-list th {
+    text-align: left;
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid #d4c9a8;
+    color: #5c3d0e;
+}
+
+.recipe-card .ingredients-list td {
+    padding: 0.2rem 0.5rem;
+}
+
+.recipe-card .recipe-instructions {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.recipe-card .recipe-notes {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: #5c3d0e;
+}
+
+.recipe-card .recipe-source {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #eee;
+    font-size: 0.78rem;
+    color: #7a6a4f;
+}
+
+.recipe-card .source-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #8b6914;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #7a6a4f;
+    font-size: 0.85rem;
+    border-top: 1px solid #d4c9a8;
+    padding-top: 1rem;
+}
+
+footer a {
+    color: #8b6914;
+}
